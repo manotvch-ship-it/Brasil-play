@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.brasilplay"
+       name="Brasil Play"
+       version="1.0.0"
+       provider-name="BrasilPlay">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pt_BR">Brasil Play — IPTV ao Vivo</summary>
+    <description lang="pt_BR">206 canais brasileiros, portugueses e internacionais ao vivo. TV Aberta, Notícias, Esportes, Religioso, Música e muito mais.</description>
+    <disclaimer lang="pt_BR">Este addon utiliza streams públicos disponíveis na internet.</disclaimer>
+    <platform>all</platform>
+    <language>pt_BR</language>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="repository.brasil-play"
+       name="Brasil Play Repository"
+       version="1.0.0"
+       provider-name="manotvch-ship-it">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Brasil Play Repository">
+    <dir>
+      <info compressed="false">https://manotvch-ship-it.github.io/repository.brasil-play/addons.xml</info>
+      <checksum>https://manotvch-ship-it.github.io/repository.brasil-play/addons.xml.md5</checksum>
+      <datadir zip="true">https://manotvch-ship-it.github.io/repository.brasil-play/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pt_BR">Repositório oficial do Brasil Play</summary>
+    <description lang="pt_BR">Instale e receba atualizações automáticas do Brasil Play.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+</addons>
